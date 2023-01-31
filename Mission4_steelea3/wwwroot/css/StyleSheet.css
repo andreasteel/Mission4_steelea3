@@ -1,7 +1,24 @@
 ﻿body {
-    font-family:Cambria, Cochin, Georgia, Times, Times New Roman, serif
+    font-family:Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    color: gray;
 }
 
 label {
     color: rebeccapurple;
+}
+
+h1 {
+    color: cadetblue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration:dotted;
+}
+
+h2 {
+    color: cornflowerblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: dotted;
+}
+
+li {
+    color: mediumpurple;
 }
