@@ -1,0 +1,41 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model FormModel;  
+
+<h2 id="form">Form</h2>
+<h3 id="finalGrade"></h3>
+<form id="formInput" method="post">
+    <label>Assignments: </label>
+    <input size="1" type="number" id="assignments" step=".01" min="0" max="100" name="assignments"/>
+    <label>/50%</label><br /><br />
+
+    <label>Group Project: </label>
+    <input size="1" id="groupproject" type="number" step=".01" min="0" max="100" name="groupproject"/>
+    <label>/10%</label><br /><br />
+
+    <label>Quizzes: </label>
+    <input size="1" id="quizzes" type="number" step=".01" min="0" max="100" name="quizzes"/>
+    <label>/10%</label><br /><br />
+
+    <label>Midterm Exam: </label>
+    <input size="1" id="midtem" type="number" step=".01" min="0" max="100" name="midtem"/>
+    <label>/10%</label><br /><br />
+
+    <label>Final Exam: </label>
+    <input size="1" id="final" type="number" step=".01" min="0" max="100" name="final"/>
+    <label>/10%</label><br /><br />
+
+    <label>INTEX: </label>
+    <input size="1" type="number" id="intex" step=".01" min="0" max="100" name="intex"/>
+    <label>/10%</label><br />
+
+    <br />
+    <input id="results" type="submit" value="Calculate" /><br />
+</form>
+
+
+<script src="js/JavaScript.js"></script>
