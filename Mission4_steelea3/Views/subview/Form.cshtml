@@ -10,31 +10,33 @@
 <h3 id="finalGrade"></h3>
 <form id="formInput" method="post">
     <label>Assignments: </label>
-    <input size="1" type="number" id="assignments" step=".01" min="0" max="100" name="assignments"/>
+    <input size="1" type="number" id="assignments" step=".01" min="0" max="100" asp-for="assignments"/>
     <label>/50%</label><br /><br />
 
     <label>Group Project: </label>
-    <input size="1" id="groupproject" type="number" step=".01" min="0" max="100" name="groupproject"/>
+    <input size="1" id="groupproject" type="number" step=".01" min="0" max="100" asp-for="groupproject"/>
     <label>/10%</label><br /><br />
 
     <label>Quizzes: </label>
-    <input size="1" id="quizzes" type="number" step=".01" min="0" max="100" name="quizzes"/>
+    <input size="1" id="quizzes" type="number" step=".01" min="0" max="100" asp-for="quizzes"/>
     <label>/10%</label><br /><br />
 
     <label>Midterm Exam: </label>
-    <input size="1" id="midtem" type="number" step=".01" min="0" max="100" name="midtem"/>
+    <input size="1" id="midtem" type="number" step=".01" min="0" max="100" asp-for="midtem"/>
     <label>/10%</label><br /><br />
 
     <label>Final Exam: </label>
-    <input size="1" id="final" type="number" step=".01" min="0" max="100" name="final"/>
+    <input size="1" id="final" type="number" step=".01" min="0" max="100" asp-for="final"/>
     <label>/10%</label><br /><br />
 
     <label>INTEX: </label>
-    <input size="1" type="number" id="intex" step=".01" min="0" max="100" name="intex"/>
+    <input size="1" type="number" id="intex" step=".01" min="0" max="100" asp-for="intex"/>
     <label>/10%</label><br />
 
     <br />
     <input id="results" type="submit" value="Calculate" /><br />
+
+    <div asp-validation-summary="All"></div>
 </form>
 
 
